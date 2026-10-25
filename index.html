@@ -1,46 +1,60 @@
 <!doctype html>
-<html lang="de">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DropPad</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="app_icon.png">
+  <script src="lang.js"></script>
 </head>
 <body>
+<nav class="lang-switch" aria-label="Sprache / Language">
+  <button type="button" data-set="de">DE</button>
+  <button type="button" data-set="en">EN</button>
+</nav>
 <main>
   <header>
     <img src="app_icon.png" alt="DropPad">
     <h1>DropPad</h1>
-    <p class="subtitle">Die Ablage für Dateien, Screenshots und alles, was du kopierst.<br>
-      The shelf for files, screenshots and everything you copy.</p>
+    <p class="subtitle" lang="de">Die Ablage für Dateien, Screenshots und alles, was du kopierst.</p>
+    <p class="subtitle" lang="en">The shelf for files, screenshots and everything you copy.</p>
   </header>
 
-  <section class="card">
+  <section class="card" lang="de">
     <h2>Support</h2>
-    <p>Fragen, Fehler oder Wünsche? Schreib mir eine E-Mail an
-      <a href="mailto:jzawadke+droppad@gmail.com">jzawadke+droppad@gmail.com</a>.</p>
-    <p>Questions, bugs or ideas? Send an e-mail to
-      <a href="mailto:jzawadke+droppad@gmail.com">jzawadke+droppad@gmail.com</a>.</p>
+    <p>Fragen, Fehler oder Wünsche? Schreib mir eine E-Mail an <a href="mailto:jzawadke+droppad@gmail.com">jzawadke+droppad@gmail.com</a>.</p>
+  </section>
+  <section class="card" lang="en">
+    <h2>Support</h2>
+    <p>Questions, bugs or ideas? Send an e-mail to <a href="mailto:jzawadke+droppad@gmail.com">jzawadke+droppad@gmail.com</a>.</p>
   </section>
 
-  <section class="card">
-    <h2>Häufige Fragen · FAQ</h2>
-    <h3>Wie öffne ich eine Box? · How do I open a box?</h3>
-    <p>Ziehe eine Datei und schüttle dabei den Mauszeiger kurz hin und her. Kopierte Dateien und neue Screenshots öffnen automatisch eine Box.<br>
-      Drag a file and shake the pointer back and forth. Copied files and new screenshots open a box automatically.</p>
-    <h3>Warum fragt DropPad nach Berechtigungen? · Why does DropPad ask for permissions?</h3>
-    <p><strong>Eingabeüberwachung</strong>: Nur damit DropPad erkennt, dass du Cmd+V drückst, und die Box danach schließen kann. Tastatureingaben werden weder gespeichert noch übertragen.<br>
-      <strong>Input Monitoring</strong>: only so DropPad notices when you press Cmd+V and can close the box afterwards. Keystrokes are never stored or sent anywhere.</p>
-    <p><strong>Zugriff auf den Benutzerordner</strong>: Damit DropPad neue Screenshots öffnen kann, egal wo macOS sie speichert.<br>
-      <strong>Access to your home folder</strong>: so DropPad can open new screenshots wherever macOS saves them.</p>
-    <h3>Ich habe einen neuen Mac. · I have a new Mac.</h3>
-    <p>Öffne die Einstellungen, Bereich Allgemein, und wähle „Wiederherstellen“.<br>
-      Open Settings, section General, and choose “Restore”.</p>
+  <section class="card" lang="de">
+    <h2>Häufige Fragen</h2>
+    <h3>Wie öffne ich eine Box?</h3>
+    <p>Ziehe eine Datei und schüttle dabei den Mauszeiger kurz hin und her. Kopierte Dateien und neue Screenshots öffnen automatisch eine Box.</p>
+    <h3>Warum fragt DropPad nach Berechtigungen?</h3>
+    <p><strong>Eingabeüberwachung:</strong> nur damit DropPad erkennt, dass du Cmd+V drückst, und die Box danach schließen kann. Tastatureingaben werden weder gespeichert noch übertragen.</p>
+    <p><strong>Zugriff auf den Benutzerordner:</strong> damit DropPad neue Screenshots öffnen kann, egal wo macOS sie speichert.</p>
+    <h3>Ich habe einen neuen Mac.</h3>
+    <p>Öffne die Einstellungen, Bereich Allgemein, und wähle „Wiederherstellen“.</p>
+  </section>
+  <section class="card" lang="en">
+    <h2>FAQ</h2>
+    <h3>How do I open a box?</h3>
+    <p>Drag a file and shake the pointer back and forth. Copied files and new screenshots open a box automatically.</p>
+    <h3>Why does DropPad ask for permissions?</h3>
+    <p><strong>Input Monitoring:</strong> only so DropPad notices when you press Cmd+V and can close the box afterwards. Keystrokes are never stored or sent anywhere.</p>
+    <p><strong>Access to your home folder:</strong> so DropPad can open new screenshots wherever macOS saves them.</p>
+    <h3>I have a new Mac.</h3>
+    <p>Open Settings, section General, and choose “Restore”.</p>
   </section>
 
   <footer>
-    <a href="privacy.html">Datenschutz · Privacy</a>
+    <a href="index.html"><span lang="de">Support</span><span lang="en">Support</span></a>
+    <a href="privacy.html"><span lang="de">Datenschutz</span><span lang="en">Privacy</span></a>
+    <a href="imprint.html"><span lang="de">Impressum</span><span lang="en">Legal notice</span></a>
   </footer>
 </main>
 </body>
